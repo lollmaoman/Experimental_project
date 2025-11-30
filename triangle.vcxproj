@@ -135,16 +135,20 @@
   <ItemGroup>
     <ClCompile Include="glad.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="ResourceNamespace.h" />
+    <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="ResourceNamespace.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="triangleCollision.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Shader.h" />
     <ClInclude Include="triangle.h" />
     <ClInclude Include="triangleCollision.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="triangleColor.frag" />
     <None Include="triangleShape.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

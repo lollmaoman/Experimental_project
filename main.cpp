@@ -55,7 +55,9 @@ int main()
     }
 
 	Triangle triangle(glm::vec2(5.0f, 5.0f), glm::vec2(0.0f, 0.0f), glm::vec2(10.0f, 0.0f));
-	
+    Resources::addShader("basic", "triangleShape.vert", "triangleColor.frag");
+    Resources::getShaderList();
+
 	
 
 	Triangle triangle1(glm::vec2(-5.0f, -5.0f), glm::vec2(-7.0f, -9.0f), glm::vec2(-1.0f, 0.0f));
@@ -74,9 +76,10 @@ First make easy to use ResourceManager
 
 ResourceManager:
 
-1. for shaders: it takes in fragmentShader.txt,vertexShader.txt and string as the name;
-2. 
-
+1. for shaders: it takes in fragmentShader.txt,vertexShader.txt and string as the name
+2. then stores it in a static map
+3. we can access the map using the getter function
+4. alos display all shader names 
 
 
 

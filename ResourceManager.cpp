@@ -1,3 +1,5 @@
+/*
+
 #include"ResourceManager.h"
 #include<iostream>
 #include"stb_image.h"
@@ -82,3 +84,4 @@ Texture& ResourceManager::getTexture(const std::string textureName)
 {
 	return Textures.at(textureName);
 }
+*/
