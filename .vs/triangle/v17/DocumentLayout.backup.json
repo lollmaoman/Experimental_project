@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\OpenGL\\triangle\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\triangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:triangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\triangleCollision.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:triangleCollision.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\triangleCollision.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:triangleCollision.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\ResourceNamespace.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:ResourceNamespace.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\triangleShape.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -15,28 +31,16 @@
       "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:triangleColor.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\ResourceNamespace.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:ResourceNamespace.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\triangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:triangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\ResourceNamespace.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:ResourceNamespace.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\triangleCollision.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:triangleCollision.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\triangleCollision.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:triangleCollision.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\triangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:triangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|D:\\OpenGL\\triangle\\ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{186F562A-C6AC-403F-9E64-2EB40C0B93D9}|triangle.vcxproj|solutionrelative:ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +50,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\OpenGL\\triangle\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\OpenGL\\triangle\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-18T18:16:19.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "triangleShape.vert",
+              "DocumentMoniker": "D:\\OpenGL\\triangle\\triangleShape.vert",
+              "RelativeDocumentMoniker": "triangleShape.vert",
+              "ToolTip": "D:\\OpenGL\\triangle\\triangleShape.vert",
+              "RelativeToolTip": "triangleShape.vert",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-30T12:39:28.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "triangle.h",
+              "DocumentMoniker": "D:\\OpenGL\\triangle\\triangle.h",
+              "RelativeDocumentMoniker": "triangle.h",
+              "ToolTip": "D:\\OpenGL\\triangle\\triangle.h",
+              "RelativeToolTip": "triangle.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-18T18:25:28.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "triangleColor.frag",
               "DocumentMoniker": "D:\\OpenGL\\triangle\\triangleColor.frag",
               "RelativeDocumentMoniker": "triangleColor.frag",
@@ -63,46 +106,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ResourceNamespace.h",
-              "DocumentMoniker": "D:\\OpenGL\\triangle\\ResourceNamespace.h",
-              "RelativeDocumentMoniker": "ResourceNamespace.h",
-              "ToolTip": "D:\\OpenGL\\triangle\\ResourceNamespace.h",
-              "RelativeToolTip": "ResourceNamespace.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-28T19:14:49.648Z",
+              "DocumentIndex": 0,
+              "Title": "triangle.cpp",
+              "DocumentMoniker": "D:\\OpenGL\\triangle\\triangle.cpp",
+              "RelativeDocumentMoniker": "triangle.cpp",
+              "ToolTip": "D:\\OpenGL\\triangle\\triangle.cpp",
+              "RelativeToolTip": "triangle.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-30T22:08:00.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "triangleCollision.h",
+              "DocumentMoniker": "D:\\OpenGL\\triangle\\triangleCollision.h",
+              "RelativeDocumentMoniker": "triangleCollision.h",
+              "ToolTip": "D:\\OpenGL\\triangle\\triangleCollision.h",
+              "RelativeToolTip": "triangleCollision.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-28T14:35:36.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "triangleCollision.cpp",
               "DocumentMoniker": "D:\\OpenGL\\triangle\\triangleCollision.cpp",
               "RelativeDocumentMoniker": "triangleCollision.cpp",
               "ToolTip": "D:\\OpenGL\\triangle\\triangleCollision.cpp",
               "RelativeToolTip": "triangleCollision.cpp",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-28T14:35:23.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "D:\\OpenGL\\triangle\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "D:\\OpenGL\\triangle\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAADwvz8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-18T18:16:19.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ResourceNamespace.cpp",
               "DocumentMoniker": "D:\\OpenGL\\triangle\\ResourceNamespace.cpp",
               "RelativeDocumentMoniker": "ResourceNamespace.cpp",
@@ -115,20 +158,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "triangleShape.vert",
-              "DocumentMoniker": "D:\\OpenGL\\triangle\\triangleShape.vert",
-              "RelativeDocumentMoniker": "triangleShape.vert",
-              "ToolTip": "D:\\OpenGL\\triangle\\triangleShape.vert",
-              "RelativeToolTip": "triangleShape.vert",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-30T12:39:28.621Z",
+              "DocumentIndex": 8,
+              "Title": "ResourceNamespace.h",
+              "DocumentMoniker": "D:\\OpenGL\\triangle\\ResourceNamespace.h",
+              "RelativeDocumentMoniker": "ResourceNamespace.h",
+              "ToolTip": "D:\\OpenGL\\triangle\\ResourceNamespace.h",
+              "RelativeToolTip": "ResourceNamespace.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-28T19:14:49.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "ResourceManager.cpp",
               "DocumentMoniker": "D:\\OpenGL\\triangle\\ResourceManager.cpp",
               "RelativeDocumentMoniker": "ResourceManager.cpp",
@@ -136,33 +179,7 @@
               "RelativeToolTip": "ResourceManager.cpp",
               "ViewState": "AgIAAEkAAAAAAAAAAAAAAFYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-30T21:47:27.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "triangleCollision.h",
-              "DocumentMoniker": "D:\\OpenGL\\triangle\\triangleCollision.h",
-              "RelativeDocumentMoniker": "triangleCollision.h",
-              "ToolTip": "D:\\OpenGL\\triangle\\triangleCollision.h",
-              "RelativeToolTip": "triangleCollision.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-28T14:35:36.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "triangle.h",
-              "DocumentMoniker": "D:\\OpenGL\\triangle\\triangle.h",
-              "RelativeDocumentMoniker": "triangle.h",
-              "ToolTip": "D:\\OpenGL\\triangle\\triangle.h",
-              "RelativeToolTip": "triangle.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADEAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-18T18:25:28.686Z"
+              "WhenOpened": "2025-11-30T21:47:27.439Z"
             }
           ]
         }

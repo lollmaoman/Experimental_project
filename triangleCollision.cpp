@@ -64,7 +64,7 @@ bool checkCollisionSingleNormalT1(Triangle& t1, Triangle& t2, int index, int con
 
 	float max1 = getMax(PointsT1[0], PointsT1[1], PointsT1[2]);
 	float max2 = getMax(PointsT2[0], PointsT2[1], PointsT2[2]);
-	float min1 = getMin(PointsT1[0], PointsT1[1], PointsT2[2]);
+	float min1 = getMin(PointsT1[0], PointsT1[1], PointsT1[2]);
 	float min2 = getMin(PointsT2[0], PointsT2[1], PointsT2[2]);
 
 
@@ -95,7 +95,7 @@ bool checkCollisionSingleNormalT2(Triangle& t1, Triangle& t2, int index, int con
 
 	float max1 = getMax(PointsT1[0], PointsT1[1], PointsT1[2]);
 	float max2 = getMax(PointsT2[0], PointsT2[1], PointsT2[2]);
-	float min1 = getMin(PointsT1[0], PointsT1[1], PointsT2[2]);
+	float min1 = getMin(PointsT1[0], PointsT1[1], PointsT1[2]);
 	float min2 = getMin(PointsT2[0], PointsT2[1], PointsT2[2]);
 
 
