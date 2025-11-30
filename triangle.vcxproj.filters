@@ -21,6 +21,15 @@
     <ClCompile Include="triangleCollision.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="glad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceNamespace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="triangle.h">
@@ -29,5 +38,11 @@
     <ClInclude Include="triangleCollision.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ResourceNamespace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="triangleShape.vert" />
   </ItemGroup>
 </Project>

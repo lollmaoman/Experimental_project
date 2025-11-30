@@ -1,6 +1,6 @@
 
 #include"triangleCollision.h"
-
+#include"ResourceNamespace.h"
 
 float getProjections(glm::vec2 point, glm::vec2 normal)
 {

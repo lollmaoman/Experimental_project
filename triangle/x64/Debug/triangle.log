@@ -1,6 +1,7 @@
-﻿  main.cpp
+﻿  ResourceNamespace.cpp
+  main.cpp
   triangleCollision.cpp
   Generating Code...
-D:\OpenGL\triangle\triangleCollision.cpp(109,1): warning C4715: 'checkCollisionSingleNormalT2': not all control paths return a value
 D:\OpenGL\triangle\triangleCollision.cpp(78,1): warning C4715: 'checkCollisionSingleNormalT1': not all control paths return a value
+D:\OpenGL\triangle\triangleCollision.cpp(109,1): warning C4715: 'checkCollisionSingleNormalT2': not all control paths return a value
   triangle.vcxproj -> D:\OpenGL\triangle\x64\Debug\triangle.exe
