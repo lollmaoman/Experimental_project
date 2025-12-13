@@ -133,8 +133,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="core.cpp" />
     <ClCompile Include="glad.cpp" />
+    <ClCompile Include="input.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClInclude Include="core.h" />
+    <ClInclude Include="input.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="ResourceNamespace.h" />
     <ClCompile Include="ResourceManager.cpp" />

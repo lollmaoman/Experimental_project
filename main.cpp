@@ -6,10 +6,10 @@
 #include"triangleCollision.h"
 #include<glad/glad.h>
 #include<GLFW/glfw3.h>
-
+#include"core.h"
 #include"Shader.h"
 #include"ResourceNamespace.h"
-
+#include"input.h"
 
 int main()
 {
@@ -36,15 +36,10 @@ int main()
 
     glViewport(0, 0, 800, 600);
 
-    Triangle triangle(glm::vec2(0.0f, 0.0f), glm::vec2(0.5f, 0.0f), glm::vec2(0.5f, 0.5f));
-    Resources::addShader("basic", "triangleShape.vert", "triangleColor.frag");
-    Resources::getShaderList();
+    Core::defineShapes();
+    Core::setMatrices();
+    //Input::window=window;
 
-    Triangle triangle1(glm::vec2(-1.0f, 0.43f), glm::vec2(-0.1f, 0.2f), glm::vec2(-0.1f, -0.4f));
-
-    std::cout << performCollisionCheck(triangle, triangle1);
-
-   // Triangle triangle1(glm::vec2(-5.0f, -5.0f), glm::vec2(-7.0f, -9.0f), glm::vec2(-1.0f, 0.0f));
 
 
     while (!glfwWindowShouldClose(window))
@@ -52,35 +47,20 @@ int main()
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        
-        Resources::accessShader("basic").Use();
-        glBindVertexArray(triangle.VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        Core::render();
 
-        glBindVertexArray(triangle1.VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+      
 
        // processInput(window);
       //  glfwSetKeyCallback(window, keyCallBack);
+        input::handleInput(window);
+        
         glfwSwapBuffers(window);
         glfwPollEvents();
 
     }
+    
 
-	//Triangle triangle(glm::vec2(5.0f, 5.0f), glm::vec2(0.0f, 0.0f), glm::vec2(10.0f, 0.0f));
-   // Resources::addShader("basic", "triangleShape.vert", "triangleColor.frag");
-   // Resources::getShaderList();
-
-	
-
-	//Triangle triangle1(glm::vec2(-5.0f, -5.0f), glm::vec2(-7.0f, -9.0f), glm::vec2(-1.0f, 0.0f));
-	
-
-	
-
-	
-
-	
 }
 
 /*
