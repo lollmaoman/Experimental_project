@@ -69,5 +69,6 @@
   <ItemGroup>
     <None Include="triangleShape.vert" />
     <None Include="triangleColor.frag" />
+    <None Include="triangleShape1.vert" />
   </ItemGroup>
 </Project>

@@ -13,7 +13,10 @@ namespace Core
 	void defineShapes();
 	void render();
 	void setMatrices();
+
+	void update(float deltaTime);
 	
+
 
 }
 

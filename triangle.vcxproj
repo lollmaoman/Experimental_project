@@ -155,6 +155,7 @@
   <ItemGroup>
     <None Include="triangleColor.frag" />
     <None Include="triangleShape.vert" />
+    <None Include="triangleShape1.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

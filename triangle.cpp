@@ -7,6 +7,10 @@ Triangle::Triangle(glm::vec2 first, glm::vec2 second, glm::vec2 third)
 	point[1] = second;
 	point[2] = third;
 
+	point_c[0] = first;
+	point_c[1] = second;
+		point_c[2] = third;
+
 	buildTriangle();
 	computeDirections();
 	computeNormals();
@@ -17,9 +21,9 @@ void Triangle::buildTriangle()
 
 	float Cords[] =
 	{
-		point[0].x,point[0].y,
-		point[1].x,point[1].y,
-		point[2].x,point[2].y,
+		point_c[0].x,point_c[0].y,
+		point_c[1].x,point_c[1].y,
+		point_c[2].x,point_c[2].y,
 
 
 	};

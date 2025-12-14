@@ -11,6 +11,8 @@
 #include"ResourceNamespace.h"
 #include"input.h"
 
+float deltaTime = 0.0f;
+float lastFrame = 0.0f;
 int main()
 {
 	
@@ -37,7 +39,7 @@ int main()
     glViewport(0, 0, 800, 600);
 
     Core::defineShapes();
-    Core::setMatrices();
+  
     //Input::window=window;
 
 
@@ -47,14 +49,19 @@ int main()
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
+        Core::setMatrices();
         Core::render();
+        float currentFrame = glfwGetTime();
+        deltaTime = currentFrame - lastFrame;
+        lastFrame = currentFrame;
 
       
 
        // processInput(window);
       //  glfwSetKeyCallback(window, keyCallBack);
         input::handleInput(window);
-        
+        Core::update(deltaTime);
+
         glfwSwapBuffers(window);
         glfwPollEvents();
 

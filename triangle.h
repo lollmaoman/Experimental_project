@@ -17,7 +17,12 @@ struct Triangle
 	glm::vec2 point[3];
 	glm::vec2 dir[3];
 	glm::vec2 normal[3];
+	glm::vec2 newPosition = glm::vec2(0.0f);
+	 
+	glm::vec2 point_c[3];
 
+
+	
 	unsigned int VBO, VAO;
 
 	
