@@ -116,3 +116,19 @@ namespace Core
 	
 
 }
+
+/*
+
+edit mode press v to activate.
+once activated we can select different terrain types like ground,spikes etc. to add anywhere on the map
+also by dragging mouse we can resize it however we want and also delete it.
+
+
+
+
+
+
+
+
+
+*/
