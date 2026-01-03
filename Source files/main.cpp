@@ -66,7 +66,7 @@ int main()
         
         Core::update(deltaTime);
         Core::render();
-
+        
 
         glfwSwapBuffers(window);
         glfwPollEvents();

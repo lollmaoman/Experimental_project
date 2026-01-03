@@ -1,6 +1,17 @@
-﻿  core.cpp
+﻿  ResourceManager.cpp
+  ResourceNamespace.cpp
+  Shader.cpp
+  Utility.cpp
+  core.cpp
 D:\OpenGL\triangle\Source files\core.cpp(45,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 D:\OpenGL\triangle\Source files\core.cpp(45,31): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  glad.cpp
+  input.cpp
   main.cpp
+  triangle.cpp
+  triangleCollision.cpp
+  viewport.cpp
   Generating Code...
+D:\OpenGL\triangle\Source files\triangleCollision.cpp(78,1): warning C4715: 'checkCollisionSingleNormalT1': not all control paths return a value
+D:\OpenGL\triangle\Source files\triangleCollision.cpp(109,1): warning C4715: 'checkCollisionSingleNormalT2': not all control paths return a value
   triangle.vcxproj -> D:\OpenGL\triangle\x64\Debug\triangle.exe
