@@ -47,6 +47,9 @@
     <ClCompile Include="Source files\viewport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source files\Editor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header files\triangle.h">
