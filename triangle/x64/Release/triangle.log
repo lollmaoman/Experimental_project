@@ -1,0 +1,36 @@
+﻿  core.cpp
+D:\OpenGL\triangle\core.cpp(140,34): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\OpenGL\triangle\core.cpp(141,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\OpenGL\triangle\core.cpp(188,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\OpenGL\triangle\core.cpp(189,17): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\OpenGL\Includes\include\glm\glm\detail\type_vec2.inl(64,7): error C2440: 'static_cast': cannot convert from 'A' to 'float'
+D:\OpenGL\Includes\include\glm\glm\detail\type_vec2.inl(64,7): error C2440:         with
+D:\OpenGL\Includes\include\glm\glm\detail\type_vec2.inl(64,7): error C2440:         [
+D:\OpenGL\Includes\include\glm\glm\detail\type_vec2.inl(64,7): error C2440:             A=glm::tvec2<float,glm::packed_highp>
+D:\OpenGL\Includes\include\glm\glm\detail\type_vec2.inl(64,7): error C2440:         ]
+  (compiling source file 'core.cpp')
+      D:\OpenGL\Includes\include\glm\glm\detail\type_vec2.inl(64,7):
+      No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      D:\OpenGL\Includes\include\glm\glm\detail\type_vec2.inl(64,7):
+      the template instantiation context (the oldest one first) is
+          D:\OpenGL\triangle\core.cpp(145,37):
+          see reference to function template instantiation 'glm::tvec2<float,glm::packed_highp>::tvec2<glm::tvec2<float,glm::packed_highp>,glm::tvec2<float,glm::packed_highp>>(A,B)' being compiled
+          with
+          [
+              A=glm::tvec2<float,glm::packed_highp>,
+              B=glm::tvec2<float,glm::packed_highp>
+          ]
+              D:\OpenGL\triangle\core.cpp(145,26):
+              see the first reference to 'glm::tvec2<float,glm::packed_highp>::tvec2' in 'Core::update'
+  
+D:\OpenGL\Includes\include\glm\glm\detail\type_vec2.inl(65,7): error C2440: 'static_cast': cannot convert from 'B' to 'float'
+D:\OpenGL\Includes\include\glm\glm\detail\type_vec2.inl(65,7): error C2440:         with
+D:\OpenGL\Includes\include\glm\glm\detail\type_vec2.inl(65,7): error C2440:         [
+D:\OpenGL\Includes\include\glm\glm\detail\type_vec2.inl(65,7): error C2440:             B=glm::tvec2<float,glm::packed_highp>
+D:\OpenGL\Includes\include\glm\glm\detail\type_vec2.inl(65,7): error C2440:         ]
+  (compiling source file 'core.cpp')
+      D:\OpenGL\Includes\include\glm\glm\detail\type_vec2.inl(65,7):
+      No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  
+  main.cpp
+D:\OpenGL\triangle\main.cpp(54,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data

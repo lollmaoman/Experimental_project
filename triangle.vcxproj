@@ -110,6 +110,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\OpenGL\triangle\Header files;D:\OpenGL\triangle\Source files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,6 +126,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\OpenGL\triangle\Header files;D:\OpenGL\triangle\Source files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,29 +135,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="core.cpp" />
-    <ClCompile Include="glad.cpp" />
-    <ClCompile Include="input.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClInclude Include="core.h" />
-    <ClInclude Include="input.h" />
-    <ClInclude Include="ResourceManager.h" />
-    <ClInclude Include="ResourceNamespace.h" />
-    <ClCompile Include="ResourceManager.cpp" />
-    <ClCompile Include="ResourceNamespace.cpp" />
-    <ClCompile Include="Shader.cpp" />
-    <ClCompile Include="triangle.cpp" />
-    <ClCompile Include="triangleCollision.cpp" />
+    <ClCompile Include="Source files\core.cpp" />
+    <ClCompile Include="Source files\glad.cpp" />
+    <ClCompile Include="Source files\input.cpp" />
+    <ClCompile Include="Source files\main.cpp" />
+    <ClCompile Include="Source files\Utility.cpp" />
+    <ClCompile Include="Source files\viewport.cpp" />
+    <ClInclude Include="Header files\core.h" />
+    <ClInclude Include="Header files\input.h" />
+    <ClInclude Include="Header files\ResourceManager.h" />
+    <ClInclude Include="Header files\ResourceNamespace.h" />
+    <ClCompile Include="Source files\ResourceManager.cpp" />
+    <ClCompile Include="Source files\ResourceNamespace.cpp" />
+    <ClCompile Include="Source files\Shader.cpp" />
+    <ClCompile Include="Source files\triangle.cpp" />
+    <ClCompile Include="Source files\triangleCollision.cpp" />
+    <ClInclude Include="Header files\Utility.h" />
+    <ClInclude Include="Header files\viewport.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Shader.h" />
-    <ClInclude Include="triangle.h" />
-    <ClInclude Include="triangleCollision.h" />
+    <ClInclude Include="Header files\Shader.h" />
+    <ClInclude Include="Header files\triangle.h" />
+    <ClInclude Include="Header files\triangleCollision.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="triangleColor.frag" />
-    <None Include="triangleShape.vert" />
-    <None Include="triangleShape1.vert" />
+    <None Include="Shaders\border.vert" />
+    <None Include="Shaders\triangleColor.frag" />
+    <None Include="Shaders\triangleShape.vert" />
+    <None Include="Shaders\triangleShape1.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

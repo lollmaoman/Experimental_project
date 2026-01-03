@@ -53,13 +53,13 @@ bool checkCollisionSingleNormalT1(Triangle& t1, Triangle& t2, int index, int con
 
 	for (int i = 0; i < 3; i++)
 	{
-		PointsT1[i] = getProjections(t1.point[i], t1.getNormalByIndex(index));
+		PointsT1[i] = getProjections(t1.point_c[i], t1.getNormalByIndex(index));
 
 	}
 
 	for (int i = 0; i < 3; i++)
 	{
-		PointsT2[i] = getProjections(t2.point[i], t1.getNormalByIndex(index));
+		PointsT2[i] = getProjections(t2.point_c[i], t1.getNormalByIndex(index));
 	}
 
 	float max1 = getMax(PointsT1[0], PointsT1[1], PointsT1[2]);
@@ -84,13 +84,13 @@ bool checkCollisionSingleNormalT2(Triangle& t1, Triangle& t2, int index, int con
 
 	for (int i = 0; i < 3; i++)
 	{
-		PointsT1[i] = getProjections(t1.point[i], t2.getNormalByIndex(index));
+		PointsT1[i] = getProjections(t1.point_c[i], t2.getNormalByIndex(index));
 
 	}
 
 	for (int i = 0; i < 3; i++)
 	{
-		PointsT2[i] = getProjections(t2.point[i], t2.getNormalByIndex(index));
+		PointsT2[i] = getProjections(t2.point_c[i], t2.getNormalByIndex(index));
 	}
 
 	float max1 = getMax(PointsT1[0], PointsT1[1], PointsT1[2]);

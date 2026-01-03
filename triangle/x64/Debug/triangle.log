@@ -1,2 +1,6 @@
 ﻿  core.cpp
+D:\OpenGL\triangle\Source files\core.cpp(45,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\OpenGL\triangle\Source files\core.cpp(45,31): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  main.cpp
+  Generating Code...
   triangle.vcxproj -> D:\OpenGL\triangle\x64\Debug\triangle.exe

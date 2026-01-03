@@ -1,6 +1,7 @@
 #ifndef RESOURCE_MANAGER_H
 #define RESOURCE_MANAGER_H
 
+/*
 #include<map>
 #include<string>
 #include<sstream>
@@ -37,3 +38,4 @@ public:
 
 
 #endif
+*/

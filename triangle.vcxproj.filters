@@ -14,65 +14,80 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="Source files\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="triangleCollision.cpp">
+    <ClCompile Include="Source files\triangleCollision.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="glad.cpp">
+    <ClCompile Include="Source files\glad.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ResourceNamespace.cpp">
+    <ClCompile Include="Source files\ResourceNamespace.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Shader.cpp">
+    <ClCompile Include="Source files\Shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ResourceManager.cpp">
+    <ClCompile Include="Source files\ResourceManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="triangle.cpp">
+    <ClCompile Include="Source files\triangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="core.cpp">
+    <ClCompile Include="Source files\core.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="input.cpp">
+    <ClCompile Include="Source files\input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source files\Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source files\viewport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="triangle.h">
+    <ClInclude Include="Header files\triangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="triangleCollision.h">
+    <ClInclude Include="Header files\triangleCollision.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ResourceNamespace.h">
+    <ClInclude Include="Header files\ResourceNamespace.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ResourceManager.h">
+    <ClInclude Include="Header files\ResourceManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="core.h">
+    <ClInclude Include="Header files\core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="input.h">
+    <ClInclude Include="Header files\input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Shader.h">
+    <ClInclude Include="Header files\Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header files\Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header files\viewport.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="triangleColor.frag">
+    <None Include="Shaders\triangleColor.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="triangleShape.vert">
+    <None Include="Shaders\triangleShape.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="triangleShape1.vert">
+    <None Include="Shaders\triangleShape1.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\border.vert">
       <Filter>Shaders</Filter>
     </None>
   </ItemGroup>

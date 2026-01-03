@@ -3,13 +3,13 @@
 #include<glm/glm/gtc/matrix_transform.hpp>
 #include<glm/glm/gtc/type_ptr.hpp>
 #include"triangle.h"
-#include"triangleCollision.h"
 #include<glad/glad.h>
 #include<GLFW/glfw3.h>
 #include"core.h"
 #include"Shader.h"
 #include"ResourceNamespace.h"
 #include"input.h"
+#include"Utility.h"
 
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
@@ -39,9 +39,15 @@ int main()
     glViewport(0, 0, 800, 600);
 
     Core::defineShapes();
-  
-    //Input::window=window;
+    Core::setViewPort(window);
+   
+    input::initWindow(window);
 
+    Box b1(glm::vec2(3.0f, 1.0f), glm::vec2(6.0f, 1.0f), glm::vec2(6.0f, 0.0f), glm::vec2(3.0f, 0.0f));
+    Box b2(glm::vec2(-1.0f, -2.0f), glm::vec2(3.0f, 3.0f), glm::vec2(5.0f, 0.0f), glm::vec2(2.0f, -1.0f));
+
+    Box b3(glm::vec2(0.0f, 0.0f), glm::vec2(3.0f, 3.0f), glm::vec2(5.0f, 0.0f), glm::vec2(2.0f, -1.0f));
+ 
 
 
     while (!glfwWindowShouldClose(window))
@@ -50,17 +56,17 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT);
 
         Core::setMatrices();
-        Core::render();
-        float currentFrame = glfwGetTime();
+       
+        float currentFrame = (float)glfwGetTime();
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
 
       
 
-       // processInput(window);
-      //  glfwSetKeyCallback(window, keyCallBack);
-        input::handleInput(window);
+        
         Core::update(deltaTime);
+        Core::render();
+
 
         glfwSwapBuffers(window);
         glfwPollEvents();
@@ -70,26 +76,3 @@ int main()
 
 }
 
-/*
-
-First make easy to use ResourceManager 
-
-ResourceManager:
-
-1. for shaders: it takes in fragmentShader.txt,vertexShader.txt and string as the name
-2. then stores it in a static map
-3. we can access the map using the getter function
-4. alos display all shader names 
-
-
-
-
-
-
-
-
-
-
-
-
-*/

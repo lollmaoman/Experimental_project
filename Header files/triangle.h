@@ -7,7 +7,27 @@
 #include<vector>
 #include"Shader.h"
 
+struct Circle
+{
+	float aspectX = 1.0f;
+	float aspectY = 1.0f;
 
+	glm::vec2 centre;
+	float radius;
+	glm::vec2 centre_c;
+	unsigned int total_vertices = 0;
+
+	unsigned int VAO, VBO;
+
+	Circle(glm::vec2 centre, float radius);
+
+	void buildCircle();
+
+	void printRadius();
+	void printCentre();
+
+
+};
 struct Triangle
 {
 	
@@ -54,5 +74,36 @@ struct Triangle
 
 };
 
+struct Box
+{
+	float Cords[12];
+
+	glm::vec2 points[4];
+	glm::vec2 dir[4];
+	glm::vec2 normals[4];
+	glm::vec2 points_c[4];
+
+	unsigned int VBO, VAO;
+
+	Box(glm::vec2 pointA, glm::vec2 pointB, glm::vec2 pointC, glm::vec2 pointD);
+
+	void computeDirections();
+
+	void printNormals();
+	void printDirections();
+	void printPoints();
+
+	void computeNormals();
+
+	void buildTriangle();
+
+	void buildBox();
+
+	void updateBox();
+ 
+	
+
+
+};
 
 #endif

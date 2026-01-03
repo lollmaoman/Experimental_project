@@ -1,6 +1,6 @@
 /*
 
-#include"ResourceManager.h"
+include"ResourceManager.h"
 #include<iostream>
 #include"stb_image.h"
 std::map<std::string, Shader> ResourceManager::Shaders;
