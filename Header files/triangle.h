@@ -6,7 +6,7 @@
 #include<glm/glm/gtc/type_ptr.hpp>
 #include<vector>
 #include"Shader.h"
-
+#include"ResourceNamespace.h"
 struct Circle
 {
 	float aspectX = 1.0f;
@@ -83,12 +83,14 @@ struct Box
 	glm::vec2 normals[4];
 	glm::vec2 points_c[4];
 
+	glm::vec2 scale = glm::vec2(1.0f);
+
 	unsigned int VBO, VAO;
 
 	Box(glm::vec2 pointA, glm::vec2 pointB, glm::vec2 pointC, glm::vec2 pointD);
 
 	void computeDirections();
-
+	
 	void printNormals();
 	void printDirections();
 	void printPoints();
@@ -100,7 +102,7 @@ struct Box
 	void buildBox();
 
 	void updateBox();
- 
+	glm::vec2 centralAxis();
 	
 
 
