@@ -143,6 +143,7 @@
     <ClCompile Include="Source files\Utility.cpp" />
     <ClCompile Include="Source files\viewport.cpp" />
     <ClInclude Include="Header files\core.h" />
+    <ClInclude Include="Header files\Editor.h" />
     <ClInclude Include="Header files\input.h" />
     <ClInclude Include="Header files\ResourceManager.h" />
     <ClInclude Include="Header files\ResourceNamespace.h" />
