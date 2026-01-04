@@ -175,8 +175,8 @@ namespace Utility
 
 		for (int i = 0; i < 4; i++)
 		{
-			pointsb1[i] = getProjections(b1.points_c[i], b1.normals[index]);
-			pointsb2[i] = getProjections(b2.points_c[i], b1.normals[index]);
+			pointsb1[i] = getProjections(b1.points[i], b1.normals[index]);
+			pointsb2[i] = getProjections(b2.points[i], b1.normals[index]);
 
 		}
 
@@ -208,8 +208,8 @@ namespace Utility
 
 		for (int i = 0; i < 4; i++)
 		{
-			pointsb1[i] = getProjections(b1.points_c[i], b2.normals[index]);
-			pointsb2[i] = getProjections(b2.points_c[i], b2.normals[index]);
+			pointsb1[i] = getProjections(b1.points[i], b2.normals[index]);
+			pointsb2[i] = getProjections(b2.points[i], b2.normals[index]);
 
 		}
 

@@ -3,6 +3,7 @@
 #include"triangle.h"
 #include"Utility.h"
 #include"viewport.h"
+#include"Editor.h"
 namespace Core
 {
 
@@ -52,7 +53,7 @@ namespace Core
 		triangle1 = new Triangle(glm::vec2(20.0f, 0.0f), glm::vec2(0.0f, 0.0f), glm::vec2(0.0f, 20.0f));
 		mouseBorder = new Box(glm::vec2(0.0f, 0.001f), glm::vec2(0.001f, 0.001f), glm::vec2(0.001f, 0.0f),glm::vec2(0.0f,0.0f));
 		
-		box = new Box(glm::vec2(-10.0f, 10.0f), glm::vec2(0.0f, 12.0f), glm::vec2(0.0f, 0.0f), glm::vec2(-10.0f, -15.0f));
+		box = new Box(glm::vec2(-10.0f, 12.0f), glm::vec2(10.0f, 10.0f), glm::vec2(10.0f, -10.0f), glm::vec2(-10.0f, -15.0f));
 		box1 = new Box(glm::vec2(0.0f, 50.0f), glm::vec2(70.0f, 30.0f), glm::vec2(50.0f, -20.0f), glm::vec2(0.0f, 0.0f));
 
 		c = new Circle(glm::vec2(0.0f, 0.0f),1.5f);
@@ -63,7 +64,8 @@ namespace Core
 
 		Resources::addShader("border", "Shaders\\border.vert", "Shaders\\triangleColor.frag");
 
-		
+		Editor::initMouse(c);
+
         
 	}
 
@@ -79,9 +81,9 @@ namespace Core
 		glm::mat4 translateX = glm::translate(identity, glm::vec3(translatePositionX, translatePositionY, 0.0f));
 		glm::mat4 borderTranslate = glm::translate(identity, glm::vec3(mouseBorderTranslateX, mouseBorderTranslateY, 0.0f));
 
-		Resources::accessShader("basic").Use();
-		Resources::accessShader("basic").setMat4("projection", screen.get2DProjection());
-		Resources::accessShader("basic").setMat4("model",glm::mat4(1.0f));
+		//Resources::accessShader("basic").Use();
+		//Resources::accessShader("basic").setMat4("projection", screen.get2DProjection());
+		//Resources::accessShader("basic").setMat4("model", Editor::scaleBox(*box));
 
 
 		Resources::accessShader("basic1").Use();
@@ -165,18 +167,25 @@ namespace Core
 			}
 			
 		}
-
-		box->updateBox();
+	//	box->printPoints();
+		
+		
 
 		input::updateCursorPos(screen);
 		input::setCallbacks();
 		
 		screen.setCallback();
+		box->updateBox();
+		Resources::accessShader("basic").Use();
+		Resources::accessShader("basic").setMat4("projection", screen.get2DProjection());
+		Resources::accessShader("basic").setMat4("model", glm::mat4(1.0f));
 
-	       
+		//std::cout << Utility::circleQuadCollisionPass(*c, *box) << "\n";
+	//	Utility::printVector(box->centralAxis());
+		
 			mouseBorderTranslateX = (float)input::cursorX;
 			mouseBorderTranslateY = (float)input::cursorY;
-		
+			Editor::scaleBox(*box);
 		
 		c->centre = glm::vec2(mouseBorderTranslateX, mouseBorderTranslateY);
 
@@ -195,7 +204,7 @@ namespace Core
 		  
 		  Resources::accessShader("basic").Use();
 		
-		  Resources::accessShader("basic").setBool("collide", Utility::circleQuadCollisionPass(*c, *box));
+		//  Resources::accessShader("basic").setBool("collide", Utility::circleQuadCollisionPass(*c, *box));
 		  glBindVertexArray(box->VAO);
 		  glDrawArrays(GL_TRIANGLES, 0, 6);
 
@@ -206,7 +215,7 @@ namespace Core
 		 
 		  Resources::accessShader("border").Use();
 		  glBindVertexArray(c->VAO);
-		  glDrawArrays(GL_TRIANGLES, 0, c->total_vertices);
+		 // glDrawArrays(GL_TRIANGLES, 0, c->total_vertices);
 		
 
 	}

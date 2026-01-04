@@ -260,7 +260,21 @@ void Box:: buildBox()
 	glBindVertexArray(0);
 
 }
+glm::vec2 Box::centralAxis()
+{
+	glm::vec2 centre = glm::vec2(0.0f);
+	for (int i = 0; i < 4; i++)
+	{
+		centre.x += points[i].x;
+		centre.y += points[i].y;
 
+	}
+
+	centre.x /= 4.0f;
+	centre.y /= 4.0f;
+
+	return centre;
+}
 void Box::updateBox()
 {
 
@@ -278,20 +292,49 @@ void Box::updateBox()
 
 	for (int i = 0; i < 4; i++)
 	{
+
 		points[i] = points_c[i];
 	}
+	
+
+	glm::vec2 centre = centralAxis();
+
+	
+	for (int i = 0; i < 4; i++)
+	{
+		points_c[i] -= centre;
+	}
+
+
+	  
+	for (int i = 0; i < 4; i++)
+	{
+		points_c[i] *= scale;
+	}
+
+	for (int i = 0; i < 4; i++)
+		points_c[i] += centre;
+
+		
+
+	
+	
+	
+		
+	
 	
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
 
 	glBufferData(GL_ARRAY_BUFFER, sizeof(cords), cords, GL_DYNAMIC_DRAW);
 
 }
+
 void Box::computeDirections()
 {
-	dir[0] = points_c[1] - points_c[0];
-	dir[1] = points_c[2] - points_c[1];
-	dir[2] = points_c[3] - points_c[2];
-	dir[3] = points_c[0] - points_c[3];
+	dir[0] = points[1] - points[0];
+	dir[1] = points[2] - points[1];
+	dir[2] = points[3] - points[2];
+	dir[3] = points[0] - points[3];
 
 }
 
@@ -333,7 +376,7 @@ void Box::printPoints()
 
 	for (int i = 0; i < 4; i++)
 	{
-		std::cout << "point " << i << " = " << points_c[i].x << " " << points_c[i].y << "\n";
+		std::cout << "point " << i << " = " << points[i].x << " " << points[i].y << "\n";
 
 	}
 }

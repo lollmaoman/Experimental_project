@@ -30,8 +30,8 @@ void viewport::updateViewport(int width, int height)
 	this->width = (float)width;
 	this->height = (float)height;
 
-	l = static_l * float(width) / float(height);
-	
+//	l = static_l * float(width) / float(height);
+	l = 100.0f;
 
 	slopeX = 2 * l / this->width;
 	slopeY = -2 * d / this->height;
