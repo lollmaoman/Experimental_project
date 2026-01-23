@@ -125,7 +125,7 @@ void Triangle::buildTriangle()
 void Triangle::computeDirections()
 {
 	dir[0] = point[1] - point[0];
-	dir[1] = point[2] - point[1];
+	dir[1] =point[2] - point[1];
 	dir[2] = point[0] - point[2];
 
 
@@ -134,7 +134,7 @@ void Triangle::computeDirections()
 
 glm::vec2 Triangle::getPointByIndex(int i)
 {
-	return point[i];
+	return point_c[i];
 
 }
 
@@ -376,7 +376,7 @@ void Box::printPoints()
 
 	for (int i = 0; i < 4; i++)
 	{
-		std::cout << "point " << i << " = " << points[i].x << " " << points[i].y << "\n";
+		std::cout << "point " << i << " = " << points_c[i].x << " " << points_c[i].y << "\n";
 
 	}
 }

@@ -13,11 +13,16 @@ namespace input
 	bool leftClickHold = false;
 	bool rightClickHold = false;
 
-	double cursorX = 0;
-	double cursorY = 0;
 
 	double cursorOriginalX = 0;
 	double cursorOriginalY = 0;
+
+	double cursorX = 0;
+	double cursorY = 0;
+
+	double cursorViewportX = 0;
+	double cursorViewportY = 0;
+
 
 	double xOffset = 0;
 	double yOffset = 0;
@@ -175,8 +180,11 @@ namespace input
 		if (cursorOriginalY < 0)
 			cursorOriginalY = 0;
 
-		cursorX = -screen.l + cursorOriginalX * screen.slopeX;
-		cursorY = screen.d +  cursorOriginalY * screen.slopeY;
+		cursorViewportX = -screen.l + cursorOriginalX * screen.slopeX;
+		cursorViewportY = screen.d +  cursorOriginalY * screen.slopeY;
+
+		cursorX = -screen.static_l + cursorOriginalX*screen.staticSlopeX;
+		cursorY = cursorViewportY;
 
 
 	}

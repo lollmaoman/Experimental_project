@@ -2,6 +2,22 @@
 
 namespace Utility
 {
+	float lastFrame = 0.0f;
+	float deltaTime = 0.0f;
+
+	void calculateDeltaTime()
+	{
+		float currentFrame = (float)glfwGetTime();
+		deltaTime = currentFrame - lastFrame;
+		lastFrame = currentFrame;
+
+	}
+
+	float getDeltaTime()
+	{
+		return deltaTime;
+
+	}
 
 	float getProjections(glm::vec2 point, glm::vec2 normal)
 	{

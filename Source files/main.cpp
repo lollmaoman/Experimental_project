@@ -64,7 +64,7 @@ int main()
       
 
         
-        Core::update(deltaTime);
+        Core::update();
         Core::render();
         
 

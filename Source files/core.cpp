@@ -30,7 +30,10 @@ namespace Core
 	float mouseBorderTranslateY = 0.0f;
 	bool first = true;
 
+	float deltaTime = 0.0f;
+	float lastFrame = 0;
 
+	
 	void setViewPort(GLFWwindow *window)
 	{
 		screen.initViewport(window);
@@ -45,6 +48,7 @@ namespace Core
 
 		screen.updateViewport(screen.width, screen.height);
 	}
+
 	void defineShapes()
 	{
 
@@ -68,7 +72,7 @@ namespace Core
 
         
 	}
-
+	
 	void setMatrices()
 	{
 
@@ -77,28 +81,37 @@ namespace Core
 		
 		glm::mat4 identity = glm::mat4(1.0f);
 
-
-		glm::mat4 translateX = glm::translate(identity, glm::vec3(translatePositionX, translatePositionY, 0.0f));
+		Editor::scaleBox(*box);
+		glm::mat4 translateBox = glm::translate(identity, glm::vec3(translatePositionX, translatePositionY, 0.0f));
 		glm::mat4 borderTranslate = glm::translate(identity, glm::vec3(mouseBorderTranslateX, mouseBorderTranslateY, 0.0f));
+		
+		glm::mat4 edit = translateBox*Editor::getScaleMatrix(*box) ;
 
-		//Resources::accessShader("basic").Use();
-		//Resources::accessShader("basic").setMat4("projection", screen.get2DProjection());
-		//Resources::accessShader("basic").setMat4("model", Editor::scaleBox(*box));
-
+		Resources::accessShader("basic").Use();
+		Resources::accessShader("basic").setMat4("projection", screen.get2DProjection());
+	//	Resources::accessShader("basic").setMat4("model", translateBox);
+		Resources::accessShader("basic").setMat4("model", edit);
 
 		Resources::accessShader("basic1").Use();
 		Resources::accessShader("basic1").setMat4("projection",screen.get2DProjection());
 
 		Resources::accessShader("border").Use();
 		Resources::accessShader("border").setMat4("projection", screen.get2DProjection());
-		Resources::accessShader("border").setMat4("model", borderTranslate);
+		Resources::accessShader("border").setMat4("model",borderTranslate);
 		
-
+		
 
 	}
 
-	void update(float deltaTime)
+	void update()
 	{
+
+		
+		
+
+		Utility::calculateDeltaTime();
+		float deltaTime = Utility::getDeltaTime();
+
 		if (input::onPressed(GLFW_KEY_D))
 		{
 			translatePositionX += velocity * deltaTime;
@@ -111,7 +124,8 @@ namespace Core
 
 			for (int i = 0; i < 4; i++)
 			{
-				box->points_c[i].x += velocity * deltaTime;
+				box->points[i].x = box->points_c[i].x+translatePositionX;
+
 			}
 
 			
@@ -129,7 +143,8 @@ namespace Core
 
 			for (int i = 0; i < 4; i++)
 			{
-				box->points_c[i].x -= velocity * deltaTime;
+				box->points[i].x = box->points_c[i].x + translatePositionX;
+
 			}
 		}
 
@@ -144,13 +159,14 @@ namespace Core
 
 			for (int i = 0; i < 4; i++)
 			{
-				box->points_c[i].y += velocity * deltaTime;
+				box->points[i].y = box->points_c[i].y + translatePositionY;
+
 			}
 		}
 
 		if (input::onPressed(GLFW_KEY_S))
 		{
-			translatePositionY -=  deltaTime;
+			translatePositionY -=  velocity*deltaTime;
 			
 
 			for (int i = 0; i < 3; i++)
@@ -162,7 +178,8 @@ namespace Core
 
 			for (int i = 0; i < 4; i++)
 			{
-				box->points_c[i].y -= velocity*deltaTime;
+				box->points[i].y = box->points_c[i].y + translatePositionY;
+
 
 			}
 			
@@ -175,36 +192,39 @@ namespace Core
 		input::setCallbacks();
 		
 		screen.setCallback();
-		box->updateBox();
-		Resources::accessShader("basic").Use();
-		Resources::accessShader("basic").setMat4("projection", screen.get2DProjection());
-		Resources::accessShader("basic").setMat4("model", glm::mat4(1.0f));
-
-		//std::cout << Utility::circleQuadCollisionPass(*c, *box) << "\n";
-	//	Utility::printVector(box->centralAxis());
 		
-			mouseBorderTranslateX = (float)input::cursorX;
-			mouseBorderTranslateY = (float)input::cursorY;
-			Editor::scaleBox(*box);
+	//	box->updateBox();
+	
+
+		
+		
+		    mouseBorderTranslateX = (float)input::cursorViewportX ;
+			mouseBorderTranslateY = (float)input::cursorViewportY;
+		
 		
 		c->centre = glm::vec2(mouseBorderTranslateX, mouseBorderTranslateY);
-
 		
-	}
+	//	std::cout << input::xOffset << " " << input::yOffset << "\n";
 
+
+	}
+	float getDeltaTime()
+	{
+		return deltaTime;
+	}
 	void render()
 	{
 
 		
 	
 	
-		Shader shader = Resources::getShader("basic");
-		shader.Use();
+		  Shader shader = Resources::getShader("basic");
+		  shader.Use();
 		
 		  
 		  Resources::accessShader("basic").Use();
 		
-		//  Resources::accessShader("basic").setBool("collide", Utility::circleQuadCollisionPass(*c, *box));
+		  Resources::accessShader("basic").setBool("collide", Utility::circleQuadCollisionPass(*c, *box));
 		  glBindVertexArray(box->VAO);
 		  glDrawArrays(GL_TRIANGLES, 0, 6);
 
@@ -215,7 +235,7 @@ namespace Core
 		 
 		  Resources::accessShader("border").Use();
 		  glBindVertexArray(c->VAO);
-		 // glDrawArrays(GL_TRIANGLES, 0, c->total_vertices);
+		//  glDrawArrays(GL_TRIANGLES, 0, c->total_vertices);
 		
 
 	}
