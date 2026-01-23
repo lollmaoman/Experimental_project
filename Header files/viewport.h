@@ -12,6 +12,9 @@ struct viewport
 {
 	float width = 0.0f;
 	float height = 0.0f;
+
+	float staticSlopeX = 1.0f;
+
 	float slopeX = 1.0f;
 	float slopeY = 1.0f;
 

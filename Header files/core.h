@@ -11,12 +11,13 @@ namespace Core
 
 {
 	
+	float getDeltaTime();
 	void setViewPort(GLFWwindow *window);
 	void defineShapes();
 	void render();
 	void setMatrices();
 	//void setCallbacks();
-	void update(float deltaTime);
+	void update();
 	
 
 

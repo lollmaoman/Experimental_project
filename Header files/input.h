@@ -10,8 +10,13 @@ namespace input
 	
 	extern double cursorOriginalX;
 	extern double cursorOriginalY;
+
 	extern double cursorX;
 	extern double cursorY;
+
+	extern double cursorViewportX;
+	extern double cursorViewportY;
+
 	extern double xOffset;
 	extern double yOffset;
 

@@ -17,10 +17,11 @@ namespace Utility
 	glm::vec2 calculateNearestVector(Circle& circle, glm::vec2 edge, glm::vec2 point);
 	float getMin(float x, float y, float z);
 
-	
+	void calculateDeltaTime();
+
 	float getMax(float x, float y, float z);
 	float clamp(float valueToClamp, float left, float right);
-	
+	float getDeltaTime();
 	bool collisionPassTriangle(Triangle& t1, Triangle& t2);
 
 	float getProjections(glm::vec2 point, glm::vec2 normal);

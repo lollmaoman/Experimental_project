@@ -9,8 +9,9 @@ namespace Editor
 {
 	extern Circle *mouse;
 	void initMouse(Circle* mouse);
-	glm::mat4 scaleBox(Box& box);
+	void scaleBox(Box& box);
 	bool isNearBox(Box& box);
+	glm::mat4 getScaleMatrix(Box& box);
 
 
 
